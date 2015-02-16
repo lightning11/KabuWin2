@@ -1,0 +1,9 @@
+﻿<Window x:Class="KabuWin2MainMenu.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Click="Test1Clicked" Content="Button" HorizontalAlignment="Left" Margin="251,134,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
