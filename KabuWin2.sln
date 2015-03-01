@@ -6,6 +6,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KabuWin2MainMenu", "KabuWin2MainMenu\KabuWin2MainMenu.csproj", "{545C79BE-B5D9-4FB4-AC36-2FA3E5CA0A0D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KabuWin2Test1", "KabuWin2Test1\KabuWin2Test1.csproj", "{72FC4E41-990D-454E-BE29-1229022E88E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{622320C5-33CE-41DE-BC76-3D8C50A1DB1F} = {622320C5-33CE-41DE-BC76-3D8C50A1DB1F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KabuWin2Dao", "KabuWin2Dao\KabuWin2Dao.csproj", "{622320C5-33CE-41DE-BC76-3D8C50A1DB1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{72FC4E41-990D-454E-BE29-1229022E88E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72FC4E41-990D-454E-BE29-1229022E88E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72FC4E41-990D-454E-BE29-1229022E88E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{622320C5-33CE-41DE-BC76-3D8C50A1DB1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{622320C5-33CE-41DE-BC76-3D8C50A1DB1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{622320C5-33CE-41DE-BC76-3D8C50A1DB1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{622320C5-33CE-41DE-BC76-3D8C50A1DB1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

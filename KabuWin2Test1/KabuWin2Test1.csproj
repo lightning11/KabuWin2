@@ -93,6 +93,12 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KabuWin2Dao\KabuWin2Dao.csproj">
+      <Project>{622320c5-33ce-41de-bc76-3d8c50a1db1f}</Project>
+      <Name>KabuWin2Dao</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
