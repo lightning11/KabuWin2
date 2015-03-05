@@ -10,5 +10,7 @@ namespace KabuWin2Dao
     public class KabuContext : DbContext
     {
         public DbSet<TKabuZandaka> TKabuZandakas { get; set; }
+        public DbSet<MMeigara> MMeigaras { get; set; }
+       
     }
 }

@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="KabuContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MMeigara.cs" />
     <Compile Include="TKabuZandaka.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -70,9 +70,49 @@ namespace KabuWin2Test1
 
                 context.SaveChanges();
             }
+
+            //var zandaka1 = new TKabuZandaka { ShoukenKouzaCd = "02", MeigaraCd = "1002", KabuSu = 1 };
+
+            //using (var context = new KabuContext())
+            //{
+            //    context.TKabuZandakas.Add(zandaka1);
+
+            //    // 保存
+            //    context.SaveChanges();
+            //    Console.Out.WriteLine("追加しました");
+            //}
+        
         }
 
+        private void MeigaraAddClicked(object sender, RoutedEventArgs e)
+        {
 
+            try { 
+                //var meigara = new MMeigara { MeigaraCd = "0011", MeigaraMei="123", KikanStartDate=System.DateTime.Now };
+
+                var meigara = new MMeigara();
+                //meigara.Id = 1;
+                meigara.MeigaraCd = "0012";
+                meigara.MeigaraMei = "銘柄テスト";
+                meigara.KikanStartDate = System.DateTime.Now;
+                meigara.KikanEndDate = System.DateTime.Now;
+
+                using (var context = new KabuContext())
+                {
+                    context.MMeigaras.Add(meigara);
+
+                    // 保存
+                    context.SaveChanges();
+                    Console.Out.WriteLine("追加しました");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.Out.WriteLine( ex.ToString() );
+                
+            }
+
+        }
 
     }
 }

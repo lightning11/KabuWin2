@@ -5,5 +5,6 @@
     <Grid>
         <Button Content="検索" Click="SearchClicked" HorizontalAlignment="Left" Margin="69,46,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="更新" Click="UpdateClicked" HorizontalAlignment="Left" Margin="69,99,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="銘柄追加" Click="MeigaraAddClicked" HorizontalAlignment="Left" Margin="69,142,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>
