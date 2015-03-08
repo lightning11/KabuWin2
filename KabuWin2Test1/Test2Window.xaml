@@ -1,0 +1,9 @@
+﻿<Window x:Class="KabuWin2Test1.Test2Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Test2Window" Height="300" Width="300">
+    <Grid>
+        <Label Name="lblId"  Content="a" HorizontalAlignment="Left" Margin="69,77,0,0" VerticalAlignment="Top" Width="144"/>
+
+    </Grid>
+</Window>

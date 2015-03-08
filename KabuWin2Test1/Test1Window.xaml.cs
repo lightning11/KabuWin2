@@ -84,6 +84,7 @@ namespace KabuWin2Test1
         
         }
 
+
         private void MeigaraAddClicked(object sender, RoutedEventArgs e)
         {
 
@@ -94,8 +95,13 @@ namespace KabuWin2Test1
                 //meigara.Id = 1;
                 meigara.MeigaraCd = "0012";
                 meigara.MeigaraMei = "銘柄テスト";
-                meigara.KikanStartDate = System.DateTime.Now;
-                meigara.KikanEndDate = System.DateTime.Now;
+                meigara.TangenKabuSu = 10;
+                meigara.ReitFlag = 0;
+                meigara.KikanStartDate = System.DateTime.Parse("2015/01/01");
+                meigara.KikanEndDate = System.DateTime.Parse("2099/12/31");
+                meigara.SakuseiDateTime = System.DateTime.Now;
+                meigara.KoushinDateTime = System.DateTime.Now;
+
 
                 using (var context = new KabuContext())
                 {
@@ -113,6 +119,28 @@ namespace KabuWin2Test1
             }
 
         }
+
+        private void DialogClicked(object sender, RoutedEventArgs e)
+        {
+            Test2Window dialog = new Test2Window();
+            dialog.targetId = 1;
+
+            dialog.showDataSet();
+
+
+            bool? dialogResult = dialog.ShowDialog();
+            //switch (dialogResult)
+            //{
+            //    case true:
+            //        textBlock.Text = "OKボタンが押されました。";
+            //        break;
+            //    case false:
+            //        textBlock.Text = "Cancelボタンが押されました。";
+            //        break;
+            //}
+
+        }
+
 
     }
 }

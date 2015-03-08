@@ -59,6 +59,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Test2Window.xaml.cs">
+      <DependentUpon>Test2Window.xaml</DependentUpon>
+    </Compile>
     <Page Include="Test1Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +70,10 @@
       <DependentUpon>Test1Window.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Test2Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
